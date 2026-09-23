@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREY ENTERPRISE | Polymer & Plastic Materials</title>
+    <meta name="description" content="Reliable polymer and plastic raw materials for modern manufacturing.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div class="grain-overlay"></div>
+    
+    <div class="scroll-progress"></div>
+
+    <!-- 01. PRELOADER -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <h1 class="preloader-title">GREY<br>ENTERPRISE</h1>
+            <p class="preloader-subtitle">POLYMER & PLASTIC MATERIALS</p>
+            <div class="loading-line-container">
+                <div class="loading-line"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 02. NAVIGATION -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="#home" class="logo interactive">GREY ENTERPRISE</a>
+            <nav class="desktop-nav">
+                <a href="#about" class="nav-link interactive">ABOUT</a>
+                <a href="#materials" class="nav-link interactive">MATERIALS</a>
+                <a href="#applications" class="nav-link interactive">APPLICATIONS</a>
+                <a href="#contact" class="nav-link interactive">CONTACT</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#contact" class="btn btn-primary interactive">REQUEST A QUOTE <span class="arrow">→</span></a>
+                <button class="mobile-menu-toggle interactive" aria-label="Toggle Menu">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <div class="mobile-nav-inner">
+            <a href="#about" class="mobile-nav-link">ABOUT</a>
+            <a href="#materials" class="mobile-nav-link">MATERIALS</a>
+            <a href="#applications" class="mobile-nav-link">APPLICATIONS</a>
+            <a href="#contact" class="mobile-nav-link">CONTACT</a>
+            <a href="#contact" class="btn btn-primary mt-8">REQUEST A QUOTE <span class="arrow">→</span></a>
+        </div>
+    </div>
+
+    <main data-scroll-container>
+        <!-- 03. HERO -->
+        <section class="hero" id="home">
+            <div class="hero-bg" data-speed="0.2">
+                <img src="https://images.unsplash.com/photo-1621255554316-2aef3188d3da?q=80&w=2000&auto=format&fit=crop" alt="Polymer Granules Background" class="hero-bg-img">
+                <div class="hero-overlay"></div>
+            </div>
+            
+            <div class="hero-content container" data-speed="0.8">
+                <div class="hero-top-text reveal-text">
+                    AHMEDABAD &bull; GUJARAT &bull; INDIA
+                </div>
+                <h1 class="hero-title">
+                    <span class="line-wrap"><span class="line-inner">POLYMERS</span></span>
+                    <span class="line-wrap"><span class="line-inner">THAT MOVE</span></span>
+                    <span class="line-wrap"><span class="line-inner">INDUSTRY.</span></span>
+                </h1>
+                <p class="hero-subtitle reveal-text">
+                    Reliable polymer and plastic raw materials<br>for modern manufacturing.
+                </p>
+                <div class="hero-buttons reveal-element">
+                    <a href="#materials" class="btn btn-primary interactive">EXPLORE MATERIALS <span class="arrow">→</span></a>
+                    <a href="#contact" class="btn btn-secondary interactive">REQUEST A QUOTE <span class="arrow">→</span></a>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator reveal-element">
+                <span class="scroll-text">SCROLL TO EXPLORE</span>
+                <span class="scroll-arrow">↓</span>
+            </div>
+        </section>
+
+        <!-- 04. MARQUEE -->
+        <section class="marquee-section">
+            <div class="marquee-container interactive">
+                <div class="marquee-track">
+                    <span class="marquee-item">GPPS</span> <span class="marquee-dot">&bull;</span>
+                    <span class="marquee-item">HDPE</span> <span class="marquee-dot">&bull;</span>
+                    <span class="marquee-item">ABS</span> <span class="marquee-dot">&bull;</span>
+                    <span class="marquee-item">POM</span> <span class="marquee-dot">&bull;</span>
+                    <span class="marquee-item">PP</span> <span class="marquee-dot">&bull;</span>
+                    <span class="marquee-item">LDPE</span> <span class="marquee-dot">&bull;</span>
+                    <span class="marquee-item">POLYMER MATERIALS</span> <span class="marquee-dot">&bull;</span>
+                    <span class="marquee-item">INDUSTRIAL SUPPLY</span> <span class="marquee-dot">&bull;</span>
+                    <!-- Duplicate for infinite scroll -->
+                    <span class="marquee-item">GPPS</span> <span class="marquee-dot">&bull;</span>
+                    <span class="marquee-item">HDPE</span> <span class="marquee-dot">&bull;</span>
+                    <span class="marquee-item">ABS</span> <span class="marquee-dot">&bull;</span>
+                    <span class="marquee-item">POM</span> <span class="marquee-dot">&bull;</span>
+                    <span class="marquee-item">PP</span> <span class="marquee-dot">&bull;</span>
+                    <span class="marquee-item">LDPE</span> <span class="marquee-dot">&bull;</span>
+                    <span class="marquee-item">POLYMER MATERIALS</span> <span class="marquee-dot">&bull;</span>
+                    <span class="marquee-item">INDUSTRIAL SUPPLY</span> <span class="marquee-dot">&bull;</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 05. PRODUCT SHOWCASE -->
+        <section class="products" id="materials">
+            <div class="container products-header">
+                <h2 class="section-title fade-up">MATERIALS<br>WITH PURPOSE.</h2>
+                <p class="section-subtitle fade-up">Explore Grey Enterprise's polymer and plastic material portfolio.</p>
+            </div>
+            
+            <div class="products-horizontal-wrapper">
+                <div class="products-track">
+                    <div class="product-card interactive">
+                        <div class="product-card-inner">
+                            <div class="product-number">01</div>
+                            <div class="product-info">
+                                <h3 class="product-name">GPPS GRANULES 105</h3>
+                                <p class="product-category">General Purpose Polystyrene</p>
+                                <p class="product-desc">A polymer material suited to a range of industrial and manufacturing applications.</p>
+                                <a href="#contact" class="product-link interactive">VIEW MATERIAL <span class="arrow">→</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card interactive">
+                        <div class="product-card-inner">
+                            <div class="product-number">02</div>
+                            <div class="product-info">
+                                <h3 class="product-name">HDPE PE100</h3>
+                                <p class="product-category">High-Density Polyethylene</p>
+                                <p class="product-desc">Engineered for durability and performance in demanding environments.</p>
+                                <a href="#contact" class="product-link interactive">VIEW MATERIAL <span class="arrow">→</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card interactive">
+                        <div class="product-card-inner">
+                            <div class="product-number">03</div>
+                            <div class="product-info">
+                                <h3 class="product-name">ABS PLASTIC</h3>
+                                <p class="product-category">Acrylonitrile Butadiene Styrene</p>
+                                <p class="product-desc">Versatile thermoplastic polymer known for impact resistance and toughness.</p>
+                                <a href="#contact" class="product-link interactive">VIEW MATERIAL <span class="arrow">→</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card interactive">
+                        <div class="product-card-inner">
+                            <div class="product-number">04</div>
+                            <div class="product-info">
+                                <h3 class="product-name">PP GRANULES 104</h3>
+                                <p class="product-category">Polypropylene</p>
+                                <p class="product-desc">Reliable properties for general purpose injection moulding and extrusion.</p>
+                                <a href="#contact" class="product-link interactive">VIEW MATERIAL <span class="arrow">→</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card interactive">
+                        <div class="product-card-inner">
+                            <div class="product-number">05</div>
+                            <div class="product-info">
+                                <h3 class="product-name">POM PLASTIC</h3>
+                                <p class="product-category">Polyoxymethylene</p>
+                                <p class="product-desc">Engineering thermoplastic used in precision parts requiring high stiffness.</p>
+                                <a href="#contact" class="product-link interactive">VIEW MATERIAL <span class="arrow">→</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container products-grid">
+                <div class="grid-card interactive fade-up">
+                    <div class="product-number">06</div>
+                    <h3 class="product-name">LDPE GRANULES</h3>
+                    <a href="#contact" class="product-link interactive">VIEW MATERIAL <span class="arrow">→</span></a>
+                </div>
+                <div class="grid-card interactive fade-up" data-delay="0.1">
+                    <div class="product-number">07</div>
+                    <h3 class="product-name">RED GRANULES</h3>
+                    <a href="#contact" class="product-link interactive">VIEW MATERIAL <span class="arrow">→</span></a>
+                </div>
+                <div class="grid-card interactive fade-up" data-delay="0.2">
+                    <div class="product-number">08</div>
+                    <h3 class="product-name">GPPS GRANULES 108</h3>
+                    <a href="#contact" class="product-link interactive">VIEW MATERIAL <span class="arrow">→</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 06. MATERIAL STORY / PARALLAX -->
+        <section class="material-story" id="story">
+            <div class="story-bg-wrapper">
+                <div class="story-bg">
+                    <img src="https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?q=80&w=2000&auto=format&fit=crop" alt="Macro Material" class="story-img">
+                    <div class="story-overlay"></div>
+                </div>
+            </div>
+            
+            <div class="story-content container">
+                <h2 class="giant-text">
+                    <span class="block">FROM</span>
+                    <span class="block">MATERIAL</span>
+                    <span class="block spacer"></span>
+                    <span class="block">TO</span>
+                    <span class="block">POSSIBILITY.</span>
+                </h2>
+                
+                <div class="floating-blocks">
+                    <div class="float-block b1">
+                        <h4>CONSISTENCY</h4>
+                        <p>Materials selected around practical manufacturing requirements.</p>
+                    </div>
+                    <div class="float-block b2">
+                        <h4>FLEXIBILITY</h4>
+                        <p>A portfolio covering multiple polymer families.</p>
+                    </div>
+                    <div class="float-block b3">
+                        <h4>SUPPLY</h4>
+                        <p>Focused on dependable B2B sourcing and fulfilment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 07. APPLICATIONS -->
+        <section class="applications" id="applications">
+            <div class="container">
+                <h2 class="section-title fade-up">WHERE MATERIAL<br>BECOMES PRODUCT.</h2>
+                
+                <div class="app-grid">
+                    <div class="app-card large interactive fade-up">
+                        <div class="app-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1503376710915-188ccdbb3e51?q=80&w=1000&auto=format&fit=crop" alt="Automotive">
+                            <div class="app-overlay"></div>
+                        </div>
+                        <div class="app-content">
+                            <h3>AUTOMOTIVE</h3>
+                            <p>Performance begins with the right material.</p>
+                        </div>
+                        <div class="app-arrow">→</div>
+                    </div>
+                    
+                    <div class="app-card small interactive fade-up">
+                        <div class="app-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1605273273873-500b1a646cfa?q=80&w=800&auto=format&fit=crop" alt="Packaging">
+                            <div class="app-overlay"></div>
+                        </div>
+                        <div class="app-content">
+                            <h3>PACKAGING</h3>
+                            <p>Integrity for storage and transport.</p>
+                        </div>
+                        <div class="app-arrow">→</div>
+                    </div>
+
+                    <div class="app-card small interactive fade-up">
+                        <div class="app-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=800&auto=format&fit=crop" alt="Industrial">
+                            <div class="app-overlay"></div>
+                        </div>
+                        <div class="app-content">
+                            <h3>INDUSTRIAL</h3>
+                            <p>Toughness for demanding environments.</p>
+                        </div>
+                        <div class="app-arrow">→</div>
+                    </div>
+
+                    <div class="app-card medium interactive fade-up">
+                        <div class="app-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1611117765103-68d831dbcc85?q=80&w=1000&auto=format&fit=crop" alt="Consumer Products">
+                            <div class="app-overlay"></div>
+                        </div>
+                        <div class="app-content">
+                            <h3>CONSUMER</h3>
+                            <p>Everyday reliability built in.</p>
+                        </div>
+                        <div class="app-arrow">→</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 08. SUPPLY PROCESS -->
+        <section class="process">
+            <div class="container">
+                <h2 class="section-title fade-up">FROM REQUIREMENT<br>TO DELIVERY.</h2>
+                
+                <div class="process-wrapper">
+                    <div class="process-line">
+                        <div class="process-line-progress"></div>
+                    </div>
+                    
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-indicator">
+                                <div class="dot"></div>
+                            </div>
+                            <div class="step-num">01</div>
+                            <div class="step-content">
+                                <h3>UNDERSTAND</h3>
+                                <p>Understand material, grade and quantity requirements.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-indicator">
+                                <div class="dot"></div>
+                            </div>
+                            <div class="step-num">02</div>
+                            <div class="step-content">
+                                <h3>SOURCE</h3>
+                                <p>Identify suitable material for the requirement.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-indicator">
+                                <div class="dot"></div>
+                            </div>
+                            <div class="step-num">03</div>
+                            <div class="step-content">
+                                <h3>CONFIRM</h3>
+                                <p>Align specification, availability and commercial details.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-indicator">
+                                <div class="dot"></div>
+                            </div>
+                            <div class="step-num">04</div>
+                            <div class="step-content">
+                                <h3>DELIVER</h3>
+                                <p>Coordinate packaging, dispatch and fulfilment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 09. ABOUT -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-left fade-up">
+                        <h2 class="about-title">ABOUT<br>GREY ENTERPRISE</h2>
+                        <div class="about-location">AHMEDABAD, GUJARAT, INDIA</div>
+                    </div>
+                    <div class="about-right fade-up">
+                        <p class="about-desc">
+                            GREY ENTERPRISE works across polymer and plastic raw materials, connecting material requirements with practical B2B supply.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="about-statement">
+                    <h2 class="statement-title">
+                        <span class="line-wrap"><span class="line-inner">MATERIAL SUPPLY</span></span>
+                        <span class="line-wrap"><span class="line-inner">SHOULD FEEL</span></span>
+                        <span class="line-wrap"><span class="line-inner accent-text">SIMPLE.</span></span>
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. QUALITY / RELIABILITY -->
+        <section class="quality">
+            <div class="container">
+                <h2 class="section-title fade-up">THE DETAILS<br>MATTER.</h2>
+                
+                <div class="quality-grid">
+                    <div class="quality-item fade-up">
+                        <div class="q-line"></div>
+                        <h3>MATERIAL</h3>
+                        <p>Clear material identification and requirement alignment.</p>
+                    </div>
+                    <div class="quality-item fade-up" data-delay="0.1">
+                        <div class="q-line"></div>
+                        <h3>CONSISTENCY</h3>
+                        <p>Focus on dependable product sourcing and fulfilment.</p>
+                    </div>
+                    <div class="quality-item fade-up" data-delay="0.2">
+                        <div class="q-line"></div>
+                        <h3>COMMUNICATION</h3>
+                        <p>Clear conversations from enquiry to delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. PRODUCT CTA -->
+        <section class="big-cta interactive">
+            <div class="cta-bg" data-speed="0.5">
+                <img src="https://images.unsplash.com/photo-1590458643896-1c4b79b9dc4a?q=80&w=2000&auto=format&fit=crop" alt="Dark Texture" class="cta-img">
+                <div class="cta-overlay"></div>
+            </div>
+            <div class="cta-content container">
+                <h2 class="giant-text cta-giant">
+                    <span class="block">LOOKING FOR</span>
+                    <span class="block">A SPECIFIC</span>
+                    <span class="block">MATERIAL?</span>
+                </h2>
+                <p class="cta-sub fade-up">Tell us what you need.</p>
+                
+                <div class="cta-actions fade-up">
+                    <a href="#contact" class="btn btn-primary lg interactive">REQUEST A QUOTE <span class="arrow">→</span></a>
+                    <a href="#contact" class="btn btn-secondary lg interactive">CONTACT GREY ENTERPRISE <span class="arrow">→</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 12. CONTACT -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info fade-up">
+                        <h2 class="section-title">LET'S TALK<br>MATERIALS.</h2>
+                        
+                        <div class="address-block">
+                            <strong>GREY ENTERPRISE</strong><br>
+                            Ahmedabad, Gujarat, India
+                        </div>
+                        
+                        <div class="contact-methods">
+                            <div class="method">
+                                <span class="label">Phone</span>
+                                <span class="value">[PLACEHOLDER]</span>
+                            </div>
+                            <div class="method">
+                                <span class="label">Email</span>
+                                <span class="value">[PLACEHOLDER]</span>
+                            </div>
+                            <div class="method">
+                                <span class="label">WhatsApp</span>
+                                <span class="value">[PLACEHOLDER]</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-wrap fade-up">
+                        <form id="enquiry-form" class="enquiry-form">
+                            <div class="form-group">
+                                <input type="text" id="name" required placeholder=" ">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="company" required placeholder=" ">
+                                <label for="company">Company</label>
+                            </div>
+                            <div class="form-grid-inner">
+                                <div class="form-group">
+                                    <input type="email" id="email" required placeholder=" ">
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" id="phone" required placeholder=" ">
+                                    <label for="phone">Phone</label>
+                                </div>
+                            </div>
+                            <div class="form-grid-inner">
+                                <div class="form-group">
+                                    <input type="text" id="material" required placeholder=" ">
+                                    <label for="material">Material Required</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="quantity" required placeholder=" ">
+                                    <label for="quantity">Quantity</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" rows="4" required placeholder=" "></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary submit-btn interactive">
+                                SEND ENQUIRY <span class="arrow">→</span>
+                            </button>
+                        </form>
+                        
+                        <div class="form-success" id="form-success">
+                            <div class="success-inner">
+                                <h3>THANK YOU.</h3>
+                                <p>YOUR ENQUIRY HAS BEEN RECEIVED.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 13. FOOTER -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <h2>GREY ENTERPRISE</h2>
+                        <p>Polymer & Plastic Materials</p>
+                    </div>
+                    <nav class="footer-nav">
+                        <a href="#home" class="interactive">Home</a>
+                        <a href="#about" class="interactive">About</a>
+                        <a href="#materials" class="interactive">Materials</a>
+                        <a href="#applications" class="interactive">Applications</a>
+                        <a href="#contact" class="interactive">Contact</a>
+                    </nav>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-line"></div>
+                    <div class="footer-copy">
+                        <p>&copy; 2026 Grey Enterprise</p>
+                        <p>Ahmedabad, Gujarat, India</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
