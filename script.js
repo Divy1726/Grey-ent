@@ -207,19 +207,33 @@ document.addEventListener('DOMContentLoaded', () => {
         // Parallax images using data-speed attribute
         const parallaxElements = document.querySelectorAll('[data-speed]');
         parallaxElements.forEach(el => {
-            const speed = el.getAttribute('data-speed');
+            const speed = parseFloat(el.getAttribute('data-speed'));
             gsap.to(el, {
-                y: (i, target) => -ScrollTrigger.maxScroll(window) * target.dataset.speed,
+                yPercent: speed * 50, // Move element by a percentage of its height
                 ease: "none",
                 scrollTrigger: {
                     trigger: el.parentElement,
                     start: "top bottom",
                     end: "bottom top",
-                    scrub: 0,
-                    invalidateOnRefresh: true
+                    scrub: true,
                 }
             });
         });
+
+        // Dedicated Hero Scroll Parallax
+        const heroBg = document.querySelector('.hero-bg');
+        if (heroBg) {
+            gsap.to(heroBg, {
+                yPercent: 15,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: '.hero',
+                    start: "top top",
+                    end: "bottom top",
+                    scrub: true
+                }
+            });
+        }
     }
 
     // Material Story Pinned Parallax
@@ -312,15 +326,25 @@ document.addEventListener('DOMContentLoaded', () => {
         ScrollTrigger.refresh();
     });
 
-    // Initialize all modules
+    // Initialize all modules except preloader
     initCursor();
     initHeader();
     initMobileMenu();
-    initPreloader();
     initHeroParallax();
     initHorizontalProducts();
     initScrollAnimations();
     initMaterialStory();
     initProcessAnimation();
     initForm();
+
+    // Wait for custom fonts to fully load before starting the preloader animation
+    // This prevents the UI/text from shifting (FOUT) right as the page loads
+    if (document.fonts && document.fonts.ready) {
+        document.fonts.ready.then(() => {
+            initPreloader();
+        });
+    } else {
+        // Fallback for older browsers
+        window.addEventListener('load', initPreloader);
+    }
 });
